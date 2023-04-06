@@ -1,8 +1,11 @@
+import Hero from './components/Hero/Hero';
+
 import './App.css';
+
 function App() {
   return (
     <div className="App">
-          <span style={{color: 'white'}}>Subscribe FreeTime</span>
+      <Hero />
     </div>
   );
 }
