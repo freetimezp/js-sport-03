@@ -1,0 +1,96 @@
+.testimonials {
+    display: flex;
+    gap: 1rem; 
+    padding: 0 4rem;
+}
+
+.left-t {
+    display: flex;
+    flex: 1 1;
+    gap: 2rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.left-t>:nth-child(1) {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.left-t>:nth-child(2),
+.left-t>:nth-child(3) {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.left-t>:nth-child(4) {
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+    max-width: 45rem;
+}
+
+.right-t {
+    flex: 1;
+    position: relative;
+}
+
+.right-t>img {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 12rem;
+    top: 2rem;
+    transition: all 0.5s ease-in;
+}
+
+.right-t>img:hover {
+    right: 10rem;
+    top: 1rem;
+    width: 21rem;
+    height: 23rem;
+}
+
+.right-t>:nth-child(1) {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 13rem;
+    top: 1rem;
+}
+
+.right-t>:nth-child(2) {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    top: 3rem;
+    right: 11rem;
+    background: var(--planCard);
+}
+
+.arrows {
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3rem;
+}
+
+.arrows>img {
+    width: 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
