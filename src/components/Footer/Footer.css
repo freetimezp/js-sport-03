@@ -1,0 +1,39 @@
+.footer-container {
+    position: relative;
+    text-align: center;
+}
+
+.footer-container>hr {
+    border: 1px solid var(--lightgray);
+}
+
+.footer {
+    padding: 1rem 4rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.social-links>img {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.social-links>img:hover {
+    transform: rotateY(180deg);
+}
+
+.logo-f>img {
+    width: 10rem;
+}
+
+
