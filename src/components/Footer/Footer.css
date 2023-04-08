@@ -54,3 +54,8 @@
     background: rgb(255, 115, 0);
 }
 
+@media screen and (max-width: 768px) {
+    .social-links {
+        gap: 1rem;
+    }
+}

@@ -7,22 +7,25 @@ import hero_image_back from '../../assets/hero_image_back.png';
 import Heart from '../../assets/heart.png';
 import Calories from '../../assets/calories.png';
 
+import NumberCounter from 'number-counter';
+
 import { motion } from 'framer-motion';
 
 import './Hero.css';
 
 const Hero = () => {
     const transition = { type: 'spring', duration: 3 };
+    const mobile = window.innerWidth <= 768 ? true : false;
 
     return (
-        <div className='hero'>
+        <div className='hero' id="home">
             <div className="blur hero-blur"></div>
             <div className="left-h">
                 <Header />
 
                 <div className="the-best-ad">
                     <motion.div
-                        initial={{ left: '238px' }}
+                        initial={{ left: mobile ? '178px' : '238px' }}
                         whileInView={{ left: '8px' }}
                         transition={{ ...transition, type: 'tween' }}
                     >
@@ -48,15 +51,21 @@ const Hero = () => {
 
                 <div className="figures">
                     <div>
-                        <span>+140</span>
+                        <span>
+                            <NumberCounter end={140} start={50} delay='4' prefix="+" />
+                        </span>
                         <span>expert coaches</span>
                     </div>
                     <div>
-                        <span>+978</span>
+                        <span>
+                            <NumberCounter end={978} start={800} delay='4' prefix="+" />
+                        </span>
                         <span>members joined</span>
                     </div>
                     <div>
-                        <span>+50</span>
+                        <span>
+                            <NumberCounter end={50} start={1} delay='4' prefix="+" />
+                        </span>
                         <span>fitness programs</span>
                     </div>
                 </div>
@@ -85,10 +94,10 @@ const Hero = () => {
                 <motion.img
                     initial={{ right: '11rem' }}
                     whileInView={{ right: '27rem' }}
-                    transition={transition} 
-                    src={hero_image_back} 
-                    alt="hero" 
-                    className="hero-image-back" 
+                    transition={transition}
+                    src={hero_image_back}
+                    alt="hero"
+                    className="hero-image-back"
                 />
 
                 <motion.div

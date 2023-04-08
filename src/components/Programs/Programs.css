@@ -63,7 +63,25 @@
     transform: translateY(-5px);
 }
 
-
+@media screen and (max-width: 768px) {
+    .programs {
+        padding: 1rem;
+    }
+    .programs-header {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: x-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .program-categories {
+        flex-direction: column;
+    }
+    .category:hover {
+        background: var(--planCard);
+        transform: translate(0);
+    }
+}
 
 
 

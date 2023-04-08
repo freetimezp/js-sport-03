@@ -86,3 +86,15 @@
     top: 10rem;
     right: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .plans-container {
+        padding: 1rem;
+    }
+    .plans {
+        flex-direction: column;
+    }
+    .plans>:nth-child(2) {
+        transform: none;
+    }
+}
