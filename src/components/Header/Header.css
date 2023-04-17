@@ -23,17 +23,36 @@
     color: var(--orange);
 }
 
+.bars-wrapper {
+    padding: 0.5rem; 
+    background-color: var(--appColor);
+    border-radius: 5px;
+    position: fixed;
+    right: -50%;
+    z-index: 99;
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
-    .header>:nth-child(2) {
+    .header>.header-menu{
         position: fixed;
-        right: 2rem;
+        top: 5rem;
+        right: -50%;
         z-index: 99;
+    }
+    .header>.header-menu.show {
+        right: 2rem;
     }
     .header-menu {
         flex-direction: column;
         background-color: var(--appColor);
         padding: 2rem;
     }
+    
+.bars-wrapper {
+    right: 2rem;
+    display: block;
+}
 }
 
 
